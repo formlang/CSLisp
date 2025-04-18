@@ -1,0 +1,59 @@
+## 0.1.0 (April 18, 2025)
+  - Toolchain
+  - Fixed the concurrency issue
+  - Readme update
+  - .NET interop
+  - Some cleanup
+  - Updated documentation
+  - Added example of records in Readme, added record unit test
+  - Merge into master
+  - Support for custom record types inspired by SRFI-9 (exprimental, still needs unit tests etc)
+  - Changes to the vector API
+  - Improvements from a static analysis pass
+  - Converted library to .NET Standard 2.1, REPL and unit tests to .NET Core 3.1
+  - Updated unit test logs for future reference
+  - Added support for vectors as first-class .net objects. Fixed failing unit tests.
+  - Merge pull request #14 from furesoft/master
+  - Cleanup
+  - Added a list reversal function, and chain macros for chaining execution of unary functions
+  - set-vector return fix
+  - Add Unit Tests
+  - Added vector methods
+  - Unit tests: skip printing code block ids, they always change and pollute unit test logs
+  - Added an `eval` primitive and an `apply` macro.
+  - Minor changes to unit test logs
+  - Added functions for getting/setting fields and properties on classes and structs. Still need a more user-friendly api.
+  - Starting work on field and property accessors
+  - Updated project to Framework 4.7 and cleaned up a few API endpoints
+  - Reflection improvements: initial versions of find-method and call-method
+  - Work in progress on .net interop - for now just finding types and calling constructors
+  - Optimizations and improvements
+  - Make debug logging more configurable, so we don't spend cpu cycles making log strings when we don't have to
+  - REPL now contains a variety of commands including one for execution timing
+  - Promoted 'while' to a built-in keyword, so that we can emit bytecode for a simple loop instead of doing it recursively (saves some memory allocations).
+  - Added looping unit tests. Split unit test tracing across multiple files to make it less unwieldy
+  - Added simple looping macros
+  - Added more logging in the REPL
+  - Fixed a bug with binary if form (if p x), also improved compiler readability and removed some speculative optimizations for if statements that turned out to be buggy.
+  - REPL can now show bytecode compilation traces when desired. Also cleaned up some old flags around primitive operations.
+  - File rename
+  - Update example in Readme
+  - A few cleanups per editor recommendations
+  - Updated docs, updated solution to VS 2019
+  - Added better debug logging of code blocks to better explain how compilation into bytecode works
+  - Added central code block storage
+  - A bit more debugging for invalid fn calls
+  - Make our unit tests execute serially and always in the same order, so that we get a log file that can be reasonably diffed between versions
+  - Some linting and other cleanup
+  - Updated bytecode description
+  - Added a unit test example of proper tail-recursion that gets optimized
+  - Symbol package names can be suppressed during printing; this helps make the system traces much more readable
+  - Added full verbose log of running through all unit tests, for future reference
+  - Switched instructions from short mnemonics to something more understandable
+  - Unit tests now log stack contents on each step of execution, for debugging purposes
+  - Unit tests can log output to file to help inspect what the compiler and VM are doing under the hood; added more human-readable debug info
+  - Fixed n-ary addition and multiplication
+  - Variety of cleanup and fixes
+  - Initial commit
+  - Initial commit
+
