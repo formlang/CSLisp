@@ -1,3 +1,3 @@
-Projects:=CSLisp/CSLisp/CSLips/csproj
+Projects:=CSLisp/CSLisp.csproj
 
 include Makefile.nuget.inc
