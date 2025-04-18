@@ -13,24 +13,24 @@ namespace CSLisp.Core
         /// Maps from a fully qualified type name, to its corresponding .net type.
         /// This cache can be cleared as needed (eg. when reloading assemblies)
         /// </summary>
-        public static ConcurrentDictionary<string, Type> NameToTypeCache { get; private set; }
+        public static Dictionary<string, Type> NameToTypeCache { get; private set; }
 
         /// <summary>
         /// Maps from a type, to a filtered list of instance members of this type.
         /// This cache can be cleared as needed (eg. when reloading assemblies)
         /// </summary>
-        public static ConcurrentDictionary<Type, List<MemberInfo>> InstanceMemberCache { get; private set; }
+        public static Dictionary<Type, List<MemberInfo>> InstanceMemberCache { get; private set; }
 
         /// <summary>
         /// Maps from a type, to a filtered list of static members of this type.
         /// This cache can be cleared as needed (eg. when reloading assemblies)
         /// </summary>
-        public static ConcurrentDictionary<Type, List<MemberInfo>> StaticMemberCache { get; private set; }
+        public static Dictionary<Type, List<MemberInfo>> StaticMemberCache { get; private set; }
 
         static TypeUtils () {
-            NameToTypeCache = new ConcurrentDictionary<string, Type>();
-            InstanceMemberCache = new ConcurrentDictionary<Type, List<MemberInfo>>();
-            StaticMemberCache = new ConcurrentDictionary<Type, List<MemberInfo>>();
+            NameToTypeCache = new Dictionary<string, Type>();
+            InstanceMemberCache = new Dictionary<Type, List<MemberInfo>>();
+            StaticMemberCache = new Dictionary<Type, List<MemberInfo>>();
         }
 
 
