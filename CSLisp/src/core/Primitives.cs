@@ -239,7 +239,7 @@ namespace CSLisp.Core
         public static void InitializeCorePackage (Context context, Package pkg) {
             // clear out and reinitialize the dictionary.
             // also, intern all primitives in their appropriate package
-            ALL_PRIMITIVES_DICT = new Dictionary<string, List<Primitive>>();
+            // ALL_PRIMITIVES_DICT = new Dictionary<string, List<Primitive>>();
 
             foreach (Primitive p in ALL_PRIMITIVES_VECTOR) {
                 // dictionary update
