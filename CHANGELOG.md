@@ -1,3 +1,7 @@
+## 1.0.2 (April 18, 2025)
+  - Fixed a concurrency issue on accessing type info
+  - Bumped version
+
 ## 1.0.1 (April 18, 2025)
   - Switch to net8 for tests
   - Revert back the use of concurrent dictionaries
