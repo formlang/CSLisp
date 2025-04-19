@@ -1,3 +1,10 @@
+## 1.0.1 (April 18, 2025)
+  - Switch to net8 for tests
+  - Revert back the use of concurrent dictionaries
+  - Fixed Makefile
+  - Do not re-initialize the primitives
+  - yarn
+
 ## 1.0.0 (April 18, 2025)
 
 
